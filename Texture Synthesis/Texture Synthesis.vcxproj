@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{CAC527EB-9F0D-495B-B672-C5C151D60B3D}</ProjectGuid>
+    <RootNamespace>TextureSynthesis</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\x64\vc16\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\x64\vc16\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\x64\vc16\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Hayden\Documents\C++_Libraries\OpenCv_Source\build\install\x64\vc16\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_alphamat452.lib;opencv_aruco452.lib;opencv_bgsegm452.lib;opencv_bioinspired452.lib;opencv_calib3d452.lib;opencv_ccalib452.lib;opencv_core452.lib;opencv_datasets452.lib;opencv_dnn452.lib;opencv_dnn_objdetect452.lib;opencv_dnn_superres452.lib;opencv_dpm452.lib;opencv_face452.lib;opencv_features2d452.lib;opencv_flann452.lib;opencv_fuzzy452.lib;opencv_gapi452.lib;opencv_hfs452.lib;opencv_highgui452.lib;opencv_imgcodecs452.lib;opencv_imgproc452.lib;opencv_img_hash452.lib;opencv_intensity_transform452.lib;opencv_line_descriptor452.lib;opencv_mcc452.lib;opencv_ml452.lib;opencv_objdetect452.lib;opencv_optflow452.lib;opencv_phase_unwrapping452.lib;opencv_photo452.lib;opencv_plot452.lib;opencv_quality452.lib;opencv_rapid452.lib;opencv_reg452.lib;opencv_rgbd452.lib;opencv_saliency452.lib;opencv_shape452.lib;opencv_stereo452.lib;opencv_stitching452.lib;opencv_structured_light452.lib;opencv_superres452.lib;opencv_surface_matching452.lib;opencv_text452.lib;opencv_tracking452.lib;opencv_video452.lib;opencv_videoio452.lib;opencv_videostab452.lib;opencv_wechat_qrcode452.lib;opencv_xfeatures2d452.lib;opencv_ximgproc452.lib;opencv_xobjdetect452.lib;opencv_xphoto452.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)packages\boost.1.75.0.0\lib\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)packages\boost_filesystem-vc142.1.75.0.0\lib\native\libboost_filesystem-vc142-mt-gd-x64-1_75.lib;opencv_alphamat452d.lib;opencv_aruco452d.lib;opencv_bgsegm452d.lib;opencv_bioinspired452d.lib;opencv_calib3d452d.lib;opencv_ccalib452d.lib;opencv_core452d.lib;opencv_datasets452d.lib;opencv_dnn452d.lib;opencv_dnn_objdetect452d.lib;opencv_dnn_superres452d.lib;opencv_dpm452d.lib;opencv_face452d.lib;opencv_features2d452d.lib;opencv_flann452d.lib;opencv_fuzzy452d.lib;opencv_gapi452d.lib;opencv_hfs452d.lib;opencv_highgui452d.lib;opencv_imgcodecs452d.lib;opencv_imgproc452d.lib;opencv_img_hash452d.lib;opencv_intensity_transform452d.lib;opencv_line_descriptor452d.lib;opencv_mcc452d.lib;opencv_ml452d.lib;opencv_objdetect452d.lib;opencv_optflow452d.lib;opencv_phase_unwrapping452d.lib;opencv_photo452d.lib;opencv_plot452d.lib;opencv_quality452d.lib;opencv_rapid452d.lib;opencv_reg452d.lib;opencv_rgbd452d.lib;opencv_saliency452d.lib;opencv_shape452d.lib;opencv_stereo452d.lib;opencv_stitching452d.lib;opencv_structured_light452d.lib;opencv_superres452d.lib;opencv_surface_matching452d.lib;opencv_text452d.lib;opencv_tracking452d.lib;opencv_video452d.lib;opencv_videoio452d.lib;opencv_videostab452d.lib;opencv_wechat_qrcode452d.lib;opencv_xfeatures2d452d.lib;opencv_ximgproc452d.lib;opencv_xobjdetect452d.lib;opencv_xphoto452d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_alphamat452.lib;opencv_aruco452.lib;opencv_bgsegm452.lib;opencv_bioinspired452.lib;opencv_calib3d452.lib;opencv_ccalib452.lib;opencv_core452.lib;opencv_datasets452.lib;opencv_dnn452.lib;opencv_dnn_objdetect452.lib;opencv_dnn_superres452.lib;opencv_dpm452.lib;opencv_face452.lib;opencv_features2d452.lib;opencv_flann452.lib;opencv_fuzzy452.lib;opencv_gapi452.lib;opencv_hfs452.lib;opencv_highgui452.lib;opencv_imgcodecs452.lib;opencv_imgproc452.lib;opencv_img_hash452.lib;opencv_intensity_transform452.lib;opencv_line_descriptor452.lib;opencv_mcc452.lib;opencv_ml452.lib;opencv_objdetect452.lib;opencv_optflow452.lib;opencv_phase_unwrapping452.lib;opencv_photo452.lib;opencv_plot452.lib;opencv_quality452.lib;opencv_rapid452.lib;opencv_reg452.lib;opencv_rgbd452.lib;opencv_saliency452.lib;opencv_shape452.lib;opencv_stereo452.lib;opencv_stitching452.lib;opencv_structured_light452.lib;opencv_superres452.lib;opencv_surface_matching452.lib;opencv_text452.lib;opencv_tracking452.lib;opencv_video452.lib;opencv_videoio452.lib;opencv_videostab452.lib;opencv_wechat_qrcode452.lib;opencv_xfeatures2d452.lib;opencv_ximgproc452.lib;opencv_xobjdetect452.lib;opencv_xphoto452.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_alphamat452.lib;opencv_aruco452.lib;opencv_bgsegm452.lib;opencv_bioinspired452.lib;opencv_calib3d452.lib;opencv_ccalib452.lib;opencv_core452.lib;opencv_datasets452.lib;opencv_dnn452.lib;opencv_dnn_objdetect452.lib;opencv_dnn_superres452.lib;opencv_dpm452.lib;opencv_face452.lib;opencv_features2d452.lib;opencv_flann452.lib;opencv_fuzzy452.lib;opencv_gapi452.lib;opencv_hfs452.lib;opencv_highgui452.lib;opencv_imgcodecs452.lib;opencv_imgproc452.lib;opencv_img_hash452.lib;opencv_intensity_transform452.lib;opencv_line_descriptor452.lib;opencv_mcc452.lib;opencv_ml452.lib;opencv_objdetect452.lib;opencv_optflow452.lib;opencv_phase_unwrapping452.lib;opencv_photo452.lib;opencv_plot452.lib;opencv_quality452.lib;opencv_rapid452.lib;opencv_reg452.lib;opencv_rgbd452.lib;opencv_saliency452.lib;opencv_shape452.lib;opencv_stereo452.lib;opencv_stitching452.lib;opencv_structured_light452.lib;opencv_superres452.lib;opencv_surface_matching452.lib;opencv_text452.lib;opencv_tracking452.lib;opencv_video452.lib;opencv_videoio452.lib;opencv_videostab452.lib;opencv_wechat_qrcode452.lib;opencv_xfeatures2d452.lib;opencv_ximgproc452.lib;opencv_xobjdetect452.lib;opencv_xphoto452.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Synth.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brick_sample.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Synth.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.75.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.75.0.0\build\boost.targets')" />
+    <Import Project="..\packages\boost_filesystem-vc142.1.75.0.0\build\boost_filesystem-vc142.targets" Condition="Exists('..\packages\boost_filesystem-vc142.1.75.0.0\build\boost_filesystem-vc142.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.75.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.75.0.0\build\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_filesystem-vc142.1.75.0.0\build\boost_filesystem-vc142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_filesystem-vc142.1.75.0.0\build\boost_filesystem-vc142.targets'))" />
+  </Target>
+</Project>
