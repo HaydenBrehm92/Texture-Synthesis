@@ -3,32 +3,20 @@
 #include <opencv2/highgui.hpp>
 #include <iostream>
 #include "Image.h"
-#include "Synth.h"
+
+
+/*
+	All credit and thanks to Alexei A. Efros and Thomas K. Leung for their algorithm "Texture Synthesis by Non-parametric Sampling."
+	More info here: http://people.eecs.berkeley.edu/~efros/research/EfrosLeung.html
+	I have implemented the algorithm in C++ as a challenge to myself. 
+	A python implementation of this algorithm would be more appropriate.
+*/
 
 using namespace cv;
 
 int main()
 {
-	/*std::string image_path = "brick_sample.jpg";
-	Mat img = imread(image_path, IMREAD_COLOR);
-
-	if (img.empty()) 
-	{
-		std::cerr << "Could not read image: " << image_path << std::endl;
-		return 1;
-	}*/
-
-	//imshow("Display Window", img);
-	//int k = waitKey(0); //wait for keystroke
-
-	//if (k == 's')
-	//{
-	//	imwrite("new_brick_sample.jpg", img);
-	//}
-
 	Image I;
-	I.ReadImages();
-	I.WriteImages();
-
+	I.Synthesis();
 	return 0;
 }
